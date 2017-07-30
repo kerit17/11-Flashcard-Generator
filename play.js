@@ -32,12 +32,14 @@ function newGame() {
 			break;
 			case "Review Cards":
 				review();
+			break;
 			case "Play!":
-				play()
+				play();
 			break;
 		}
 	})
 };
+
 //new Basic Cards
 function newBasic(){
 	inquirer.prompt([
@@ -85,6 +87,7 @@ function newCloze(){
 		newGame();
 	})
 };
+
 //append cards to cards.txt file
 function addCards(userEntry){
 	fs.appendFile("cards.txt", userEntry, function(err){
@@ -93,6 +96,7 @@ function addCards(userEntry){
 		}
 	});
 }
+
 //Review Cards
 function review(){
 	fs.readFile("cards.txt", "utf8", function(err, data){
@@ -103,4 +107,22 @@ function review(){
 			console.log(data);
 		}
 })};
+
 //Play!
+function play(){
+	fs.readFile("cards.txt", "utf8", function(err, data){
+		if (err){
+			return console.log(err);
+		}
+		else{
+			console.log("Play! functionality is a work in progress. Please refer to pseudocode. Thank you.")
+			console.log("-------------------");
+			newGame();
+			//read one question at a time from the cards.txt file
+			//ask user for response
+			//verify if response is correct
+			//if response is correct, let user know
+			//if response is incorrect, show correct answer
+			//repeat until the full deck of questions is asked
+		}
+})};

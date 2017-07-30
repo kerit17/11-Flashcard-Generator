@@ -1,16 +1,12 @@
-Front: What is the capital of Ohio?
-
-Back: Columbus
-
+--------------------------------
+Front: What is the Capital of New Mexico?
 Back: Santa Fe
 
-Front: What is the Capital of New Mexico?
-
-Back: Denver
-
-Front: What is the capital of Colorado?
-
 Front: What is the capital of Louisiana?
-
 Back: Baton Rouge
 
+Front: ______________ is the capital of Arizona
+Back: Phoenix
+
+Front: ______________ is the Capital of Ohio
+Back: Columbus
